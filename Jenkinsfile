@@ -10,11 +10,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                // Instalamos PyBuilder y las dependencias de tu código
-                sh 'pip install --break-system-packages pybuilder'
+            // Instalamos PyBuilder
+            sh 'pip install --break-system-packages pybuilder'
         
-                // MODIFICACIÓN CISO: Ejecutar pyb 
-                sh 'pyb'
+            // MODIFICACIÓN: Usamos la ruta completa del ejecutable
+            // El log te indicó que está en /var/jenkins_home/.local/bin/pyb
+            sh '/var/jenkins_home/.local/bin/pyb'
             }
         }
         stage('Deploy') {

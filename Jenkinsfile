@@ -10,8 +10,10 @@ pipeline {
         }
         stage('Test') {
             steps {
-                // MODIFICACIÓN: Usamos pyb en lugar de python test.py
-                sh 'pip install pybuilder'
+                // Instalamos PyBuilder y las dependencias de tu código
+                sh 'pip install --break-system-packages pybuilder'
+        
+                // MODIFICACIÓN CISO: Ejecutar pyb 
                 sh 'pyb'
             }
         }

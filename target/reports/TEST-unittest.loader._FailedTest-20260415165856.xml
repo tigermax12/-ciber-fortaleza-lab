@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unittest.loader._FailedTest-20260415165856" tests="1" file="unittest/loader.py" time="0.016" timestamp="2026-04-15T16:58:56" failures="0" errors="1" skipped="0">
+	<testcase classname="unittest.loader._FailedTest" name="inventory_tests" time="0.016" timestamp="2026-04-15T16:58:56">
+		<error type="ImportError" message="Failed to import test module: inventory_tests
+Traceback (most recent call last):
+  File &quot;C:\Users\Vespertino\AppData\Local\Programs\Python\Python312\Lib\unittest\loader.py&quot;, line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;c:\users\vespertino\desktop\bioguard_project\src\unittest\python\inventory_tests.py&quot;, line 2, in &lt;module&gt;
+    from inventory import VaccineManager
+ModuleNotFoundError: No module named 'inventory'
+"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Vespertino\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py", line 58, in testPartExecutor
+    yield
+  File "C:\Users\Vespertino\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vespertino\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vespertino\AppData\Local\Programs\Python\Python312\Lib\unittest\loader.py", line 33, in testFailure
+    raise self._exception
+    ^^^^^^^^^^^^^^^^^
+ImportError: Failed to import test module: inventory_tests
+Traceback (most recent call last):
+  File "C:\Users\Vespertino\AppData\Local\Programs\Python\Python312\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\vespertino\desktop\bioguard_project\src\unittest\python\inventory_tests.py", line 2, in <module>
+    from inventory import VaccineManager
+ModuleNotFoundError: No module named 'inventory'
+
+]]></error>
+	</testcase>
+</testsuite>
